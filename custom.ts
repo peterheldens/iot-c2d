@@ -8,7 +8,7 @@
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace IoT_c2d {
+namespace C2D {
     export function register_device () {
         basic.clearScreen()
         if (identity < 0) {
