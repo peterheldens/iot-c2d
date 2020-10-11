@@ -24,6 +24,7 @@ namespace C2D {
         basic.clearScreen()
         who()
     }
+    //% block
     export function unregister_device () {
         basic.clearScreen()
         if (identity >= 0) {
