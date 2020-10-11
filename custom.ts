@@ -9,6 +9,7 @@
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace C2D {
+    //% block
     export function register_device () {
         basic.clearScreen()
         if (identity < 0) {
