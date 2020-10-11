@@ -4,18 +4,39 @@
  * Read more at https://makecode.microbit.org/blocks/custom
  */
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
 /**
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace IoT_c2d {
+
+export function register_device () {
+    basic.clearScreen()
+    if (identity < 0) {
+        while (identity < 0) {
+            radio.sendValue("register", 0)
+            led.toggle(2, 2)
+            basic.pause(200)
+        }
+    } else {
+        basic.showString("already registered")
+    }
+    basic.clearScreen()
+    who()
+}
+
+export function unregister_device () {
+    basic.clearScreen()
+    if (identity >= 0) {
+        radio.sendValue("del", control.deviceSerialNumber())
+        led.toggle(2, 2)
+        basic.pause(1000)
+    } else {
+        basic.showString("already deleted")
+    }
+}
+
+
 
 }
 
