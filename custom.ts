@@ -8,7 +8,7 @@
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace C2D {
+namespace c2d {
     //% block
     export function register_device () {
         basic.clearScreen()
