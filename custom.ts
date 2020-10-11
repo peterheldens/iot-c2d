@@ -9,31 +9,9 @@
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace IoT_c2d {
-    //% block
-    export function register_device () {
-        basic.clearScreen()
-        if (identity < 0) {
-            while (identity < 0) {
-                radio.sendValue("register", 0)
-                led.toggle(2, 2)
-                basic.pause(200)
-            }
-        } else {
-            basic.showString("already registered")
-        }
-        basic.clearScreen()
-        who()
-    }
-    //% block
-    export function unregister_device () {
-        basic.clearScreen()
-        if (identity >= 0) {
-            radio.sendValue("del", control.deviceSerialNumber())
-            led.toggle(2, 2)
-            basic.pause(1000)
-        } else {
-            basic.showString("already deleted")
-        }
+    //%block   
+    export function name():string {
+        return "peter"
     }
 }
 
