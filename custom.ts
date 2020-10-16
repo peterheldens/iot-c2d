@@ -95,42 +95,7 @@ function setIdentity (i: number, v: number) {
 function setText (text: string) {
     basic.showString(text)
 }
-function Telemetry () {
-    radio.sendValue("id", identity)
-    basic.pause(delay)
-    radio.sendValue("sn", 0)
-    basic.pause(delay)
-    radio.sendValue("time", 0)
-    basic.pause(delay)
-    radio.sendValue("packet", 0)
-    basic.pause(delay)
-    radio.sendValue("signal", 0)
-    basic.pause(delay)
-    radio.sendValue("temp", input.temperature())
-    basic.pause(delay)
-    radio.sendValue("light", input.lightLevel())
-    basic.pause(delay)
-    radio.sendValue("accX", input.acceleration(Dimension.X))
-    basic.pause(delay)
-    radio.sendValue("accY", input.acceleration(Dimension.Y))
-    basic.pause(delay)
-    radio.sendValue("accZ", input.acceleration(Dimension.Z))
-    basic.pause(delay)
-    radio.sendValue("comp", 1)
-    basic.pause(delay)
-    radio.sendValue("dP0", pins.digitalReadPin(DigitalPin.P0))
-    basic.pause(delay)
-    radio.sendValue("dP1", pins.digitalReadPin(DigitalPin.P1))
-    basic.pause(delay)
-    radio.sendValue("dP2", pins.digitalReadPin(DigitalPin.P2))
-    basic.pause(delay)
-    radio.sendValue("aP0", pins.analogReadPin(AnalogPin.P0))
-    basic.pause(delay)
-    radio.sendValue("aP1", pins.analogReadPin(AnalogPin.P1))
-    basic.pause(delay)
-    radio.sendValue("aP2", pins.analogReadPin(AnalogPin.P2))
-    basic.pause(delay)
-}
+
 function clear () {
     basic.clearScreen()
 }
