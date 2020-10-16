@@ -10,21 +10,9 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace IoT_c2d {
     //%block   
-    export function name():string {
+    export function author():string {
         return "peter"
     }
-}
-
-function device2cloud () {
-    // send device property to the cloud
-    radio.sendValue("device2cloud", 1)
-    basic.pause(delay)
-}
-
-function debug () {
-    // send debug info to the cloud
-    radio.sendValue("d:id", identity)
-    basic.pause(delay)
 }
 
 function cloud2device () {
