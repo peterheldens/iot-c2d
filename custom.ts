@@ -99,10 +99,7 @@ function setText (text: string) {
 function clear () {
     basic.clearScreen()
 }
-function eom () {
-    radio.sendValue("eom", 1)
-    basic.pause(delay)
-}
+
 function setBrightness (value: number) {
     strip.setBrightness(value)
     strip.showRainbow(1, 360)
