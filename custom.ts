@@ -9,10 +9,7 @@
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace IoT_c2d {
-    //%block   
-    export function author():string {
-        return "peter"
-    }
+
 }
 
 function cloud2device () {
