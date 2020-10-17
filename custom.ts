@@ -24,7 +24,7 @@ namespace IoT_c2d {
     let doCommands = false
     let serialRead = ""
     let strip: neopixel.Strip = null
-    let identity = 0
+    export let identity = 0
     identity = -1
     radio.setGroup(101)
     radio.setTransmitSerialNumber(true)
